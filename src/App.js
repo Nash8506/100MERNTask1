@@ -4,7 +4,7 @@ function App() {
   const [greeting, setGreeting] = useState('');
 
   useEffect(() => {
-    fetch('/api/greeting')
+    fetch('https://one00merntask1backend.onrender.com')
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
